@@ -11,14 +11,15 @@ int main(){
     struct tms start, end;
     long clocks_per_sec = sysconf(_SC_CLK_TCK);
     long clocks;
-
-    times(&start);
+    int n = 2000000000;
+    
     //int n = 1000000;
-    int n;
-    cin >> n;
+    //int n;
+    //cin >> n;
     double rez = 0;
-
-    for (int i = 0; i < n; i++){
+    
+    times(&start);
+    for (long long i = 0; i < n; i++){
         rez += pow(-1, i)/(2*i+1);
     }
     
