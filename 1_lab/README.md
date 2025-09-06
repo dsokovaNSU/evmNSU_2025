@@ -6,19 +6,18 @@
 
  - .sh файл - bash-скрипт для запуска всех тестовых задач одновременно, с передоваевым параметром n - количество первых членов ряда по формуле Лейбница (для времени выполнения ~15сек: n ~=`2000000000`)
 ```
-./useForLab1.sh <<< {n}
+./useForLab1.sh 
 ```
 Запуск файлов .cpp
 ```
-g++ -O2 lab1_time.cpp -o 4_1.out -Wall -Wextra -Werror && time ./4_1.out <<< {n} && rm 4_1.out
+g++ -O2 lab1_time.cpp -o 4_1.out -Wall -Wextra -Werror && time ./4_1.out && rm 4_1.out
 ```
 ```
-g++ -O2 lab1_clock_gettime.cpp -o 4_2.out -lrt -Wall -Wextra -Werror && ./4_2.out <<< {n} && rm 4_2.out
-
+g++ -O2 lab1_clock_gettime.cpp -o 4_2.out -lrt -Wall -Wextra -Werror && ./4_2.out && rm 4_2.out
 ```
 ```
-g++ -O2 lab1_libtime.cpp -o 4_3.out -Wall -Wextra -Werror && ./4_3.out <<< {n} && rm 4_3.out
+g++ -O2 lab1_libtime.cpp -o 4_3.out -Wall -Wextra -Werror && ./4_3.out && rm 4_3.out
 ```
 ```
-g++ -O2 lab1_rdtsc.cpp -o 4_4.out -Wall -Wextra -Werror && ./4_4.out <<< {n} && rm 4_4.out
+g++ -O2 lab1_rdtsc.cpp -o 4_4.out -Wall -Wextra -Werror && ./4_4.out && rm 4_4.out
 ```
