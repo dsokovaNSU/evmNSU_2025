@@ -16,7 +16,7 @@ int main() {
     start.t64 = 0;
     end.t64 = 0;
     
-    double cpu_Hz = 2900000000ULL; // 2.9 GHz
+    double cpu_Hz = 3400000000ULL; // 2.9 GHz
     
     //int n;
     //cin >> n;
