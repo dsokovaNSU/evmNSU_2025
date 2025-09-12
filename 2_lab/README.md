@@ -11,3 +11,8 @@ bash-скрипт - запускает программу для определ�
 ```
 g++ -O0 lab2_clock_gettime.cpp && ./a.out N && rm a.out
 ```
+
+Графики
+```
+https://1drv.ms/x/c/bbcb0c107f63fcb3/EZQqNWTor7BEgSx_i35Yw6kB96-98yLF9I_0gflw7m7H7Q?e=M1CW0O
+```
